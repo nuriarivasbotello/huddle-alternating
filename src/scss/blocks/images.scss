@@ -1,0 +1,24 @@
+@use '../mixins/responsive.scss' as *;
+.logo{
+    align-items: center;
+    width:100px;
+}
+.mockups{
+    width: 280px;
+    align-items: center;
+    margin-top:40px;
+    @include responsive(desktop) {
+width: 700px;
+    }
+}
+.communities{
+    width: 35px;
+    align-items: center;
+}
+.message{
+    
+}
+.together{
+    width: 280px;
+    align-items: center;
+}

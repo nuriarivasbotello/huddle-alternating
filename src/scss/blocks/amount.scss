@@ -1,0 +1,12 @@
+@use '../mixins/responsive.scss' as *;
+.amount{
+    width: 160px;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: var(--font-text);
+    color:var(--color-text);
+    &__name{
+        font-family: var(--font-text);
+        color:rgba(128, 128, 128, 0.7);
+    }
+}
