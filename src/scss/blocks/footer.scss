@@ -1,1 +1,11 @@
 /* ESTILOS DEL FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+  padding-top: 100px;
+  margin-top: 180px;
+  background-color: var(--color-background-footer);
+}
