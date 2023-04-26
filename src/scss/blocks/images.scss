@@ -11,14 +11,36 @@
 width: 700px;
     }
 }
-.communities{
-    width: 35px;
+.photo{
+    margin:0 auto;
     align-items: center;
-}
-.message{
-    
+    @include responsive(desktop) {
+        align-items: center;
+        width: 440px;
+        position: relative;
+        top:90px;
+            }
 }
 .together{
-    width: 280px;
-    align-items: center;
+    @include responsive(desktop) {
+        grid-column:2/3;
+        align-items: center;
+    
+    }
+}
+.conversation{
+    @include responsive(desktop) {
+        grid-column:1/2;
+        align-items: center;
+        position: relative;
+        top:150px;
+    }
+}
+.users{
+    @include responsive(desktop) {
+        grid-column:2/3;
+        align-items: center;
+        position: relative;
+        top:120px;
+    }
 }

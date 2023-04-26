@@ -1,0 +1,16 @@
+.message{
+    width: 352px;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    gap: 20px;
+    box-shadow: 0 0 50px 10px gray;
+    &__title{
+font-size: 18px;
+        font-family: var(--font-title);
+        color:var(--color-text);
+    }
+}

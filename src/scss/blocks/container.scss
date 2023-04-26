@@ -1,0 +1,59 @@
+@use '../mixins/responsive.scss' as *;
+.containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:80px;
+}
+.container{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    padding: 30px auto;
+    border-radius: 2rem;
+    box-shadow: 0 0 50px 1px rgba(128, 128, 128, 0.16);
+    @include responsive(desktop) {
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+       justify-content: center;
+            }
+    &__text{
+        @include responsive(desktop) {
+        text-align: left;
+        padding-left: 100px;
+        padding-right:100px;
+        position: relative;
+        bottom:50px;
+        }
+    }
+    &__title{ 
+  color:var(--color-text);
+  font-family: 'Poppins', sans-serif;
+    }
+    &__paragraph{
+        font-family:var(--font-text);
+        color:rgb(162, 162, 162);
+    }
+}
+.container-together{
+    @include responsive(desktop) {
+    text-align: left;
+    grid-column:1/2;
+    grid-row:2/3;
+    }
+}
+.container-conversation{
+    @include responsive(desktop) {
+    grid-column:2/3;
+    grid-row:2/3;
+    }
+}
+.container-users{
+    @include responsive(desktop) {
+    grid-column:1/2;
+    grid-row:2/2;
+    }
+}

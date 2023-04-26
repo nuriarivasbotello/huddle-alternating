@@ -7,9 +7,10 @@
     align-items: center;
     padding:5px 30px;
     border-radius:5rem;
-    color:var(--color-button);
+    color:black;
+    font-weight:bold;
     font-family: var(--font-text);
-    border:var(--button-radius);
+    box-shadow: 0 0 10px 1px gray;
 }
 .button--primary{
     width: 200px;

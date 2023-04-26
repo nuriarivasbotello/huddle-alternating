@@ -1,5 +1,8 @@
 @use '../mixins/responsive.scss' as *;
 .header{
+    background-color:rgba(201, 240, 255, 0.356);
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/bg-hero-mobile.svg);
     &__top{
         display: flex;
         flex-direction: row;
